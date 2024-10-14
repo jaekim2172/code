@@ -49,8 +49,12 @@ y_pred_ext = a * X_ext + b  # 확장된 구간의 회귀선 예측값 계산
 plt.plot(X_ext, y_pred_ext, color='red', label='Regression Line')  # 확장된 회귀선
 
 plt.xlim([-2, 5])  # X축 범위 설정
+plt.ylim([-1, 4])  # y축 범위 설정
 plt.xlabel('X')
 plt.ylabel('y')
 plt.title('Linear Regression using Gradient Descent')
 plt.legend()
+# 그림을 파일로 저장 (PNG 형식으로 저장)
+plt.savefig('regression_plot.png')  # 'regression_plot.png' 파일로 저장
+
 plt.show()
