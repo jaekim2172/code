@@ -15,7 +15,7 @@ df['species'] = df['species'].apply(lambda x: iris.target_names[x])  # 숫자를
 
 # 데이터 정보 출력
 print("Iris 데이터셋 샘플:")
-print(df.head())  # 상위 5개 샘플 출력
+print(df.head(30))  # 상위 5개 샘플 출력
 print("\n데이터셋 기본 정보:")
 print(df.describe())  # 기본 통계 출력
 # 데이터셋의 shape 확인
