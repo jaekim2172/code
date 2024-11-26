@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('areas.csv')
+dataset = pd.read_csv('Data.csv')
 
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
@@ -22,7 +22,3 @@ X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 sc_y = StandardScaler()
 y_train = sc_y.fit_transform(y_train)
-
-
-a=12
-print(a)
